@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:fonts && npm run copy:svg && npm run copy:redirects",
-    "build:css": "npx tailwindcss -i ./input.css -o ./dist/styles.css --minify",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
     "copy:html": "ncp ./*.html ../dist",
     "copy:img": "ncp ../img ../dist/img",
     "copy:fonts": "ncp ../fonts ../dist/fonts",
