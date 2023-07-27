@@ -1,15 +1,14 @@
 {
   "scripts": {
-    "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:fonts && npm run copy:svg && npm run copy:redirects",
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
-    "copy:html": "ncp ./*.html ../dist",
-    "copy:img": "ncp ../img ../dist/img",
-    "copy:fonts": "ncp ../fonts ../dist/fonts",
-    "copy:svg": "ncp ../svg ../dist/svg",
-    "copy:redirects": "cp ../_redirects ../dist/"
+    "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:fonts && npm run copy:svg && npm run copy:redirects",
+    "copy:html": "cp ./src/*.html ./dist",
+    "copy:img": "cp -r ./img ./dist/img",
+    "copy:fonts": "cp -r ./fonts ./dist/fonts",
+    "copy:svg": "cp -r ./svg ./dist/svg",
+    "copy:redirects": "cp ./_redirects ./dist/"
   },
   "devDependencies": {
-    "ncp": "^2.0.0",
     "tailwindcss": "^3.2.4"
   }
 }
