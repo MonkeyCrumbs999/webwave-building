@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <style>
+    #mobile-menu {
+      position: absolute;
+      top: 13%;
+      right: 7%;
+      background: white;
+      z-index: 999;
+    }
+  </style>
+
+  <body>
+    <!-- CONTAINER -->
+    <div
+      class="flex flex-col relative min-h-screen bg-[url('/svg/wave.svg')] bg-contain bg-no-repeat bg-bottom">
+      <!-- Header -->
+      <header
+        class="flex justify-between items-center px-8 pt-6 mb-12 xl:px-24">
+        <img
+          src="/img/webwavelogo.png"
+          alt="Webwave Building"
+          class="w-36 lg:w-52" />
+
+        <!-- Navbar -->
+        <nav
+          class="flex items-center justify-between py-2 px-2 lg:px-4 bg-white border-slate-200 border-x-2 border-t-2 rounded-md shadow-lg">
+          <!-- Desktop Nav Menu -->
+          <ul
+            id="menu"
+            class="text-sm font-['unbounded'] xl:text-lg hidden lg:flex lg:items-center lg:justify-end lg:flex-1">
+            <li class="inline-block p-6">
+              <a
+                href="/src/index.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Home</a
+              >
+            </li>
+            <li class="inline-block p-6">
+              <a
+                href="/src/services.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Services</a
+              >
+            </li>
+            <li class="inline-block p-6">
+              <a
+                href="/src/portfolio.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Portfolio</a
+              >
+            </li>
+            <li class="inline-block p-6">
+              <a
+                href="/src/contact.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Contact</a
+              >
+            </li>
+            <a href="/src/getyoursitenow.html">
+              <li
+                class="inline-block p-4 border-double border-4 border-webwave-blue rounded-md transition duration-0 hover:bg-webwave-blue hover:text-white hover:duration-300">
+                Get Your Site Now
+              </li>
+            </a>
+          </ul>
+
+          <!-- Hamburger Menu -->
+          <div
+            id="ham-contain"
+            class="flex flex-col justify-around w-[100%] h-[100%] lg:hidden focus:outline-none">
+            <div
+              id="hamMenu"
+              class="group flex h-10 w-10 cursor-pointer items-center justify-center rounded-3xl bg-white p-1.5 hover:bg-slate-200">
+              <div class="space-y-1.5">
+                <span
+                  class="ham-x1 block h-0.5 w-6 origin-center rounded-full bg-slate-500 transition-transform ease-in-out"></span>
+                <span
+                  class="ham-x2 block h-0.5 w-4 origin-center rounded-full bg-slate-500 transition-transform ease-in-out"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Nav Menu -->
+          <ul
+            id="mobile-menu"
+            class="invisible text-sm font-['unbounded'] text-center shadow-xl border-x-2 border-y-2 border-slate-200 xl:text-lg lg:hidden transition-opacity duration-300 opacity-0">
+            <li class="block p-6 border-b border-gray-300">
+              <a
+                href="/src/index.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Home</a
+              >
+            </li>
+            <li class="block p-6 border-b border-gray-300">
+              <a
+                href="/src/services.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Services</a
+              >
+            </li>
+            <li class="block p-6 border-b border-gray-300">
+              <a
+                href="/src/portfolio.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Portfolio</a
+              >
+            </li>
+            <li class="block p-6 border-b border-gray-300">
+              <a
+                href="/src/contact.html"
+                class="transition duration-500 hover:text-webwave-blue"
+                >Contact</a
+              >
+            </li>
+            <a href="/src/getyoursitenow.html">
+              <li
+                class="block p-4 border-double border-4 border-webwave-blue rounded-md transition duration-0 hover:bg-webwave-blue hover:text-white hover:duration-300">
+                Get Your Site Now
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Page Content -->
+      <div class="max-w-3xl mx-auto mb-24 px-4 pb-12">
+        <!-- Page Header -->
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-webwave-blue uppercase mb-4">
+            Contact Us
+          </h1>
+          <p class="text-xl text-gray-600">
+            Have a question? Let us know how we can help.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="mt-12">
+          <form>
+            <div class="grid gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-2" for="name"
+                  >Name</label
+                >
+                <input
+                  class="w-full border-2 border-gray-200 rounded p-3 text-sm"
+                  type="text"
+                  id="name" />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium mb-2" for="email"
+                  >Email</label
+                >
+                <input
+                  class="w-full border-2 border-gray-200 rounded p-3 text-sm"
+                  type="email"
+                  id="email" />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium mb-2" for="phone"
+                  >Phone</label
+                >
+                <input
+                  class="w-full border-2 border-gray-200 rounded p-3 text-sm"
+                  type="tel"
+                  id="phone" />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium mb-2" for="message"
+                  >Message</label
+                >
+                <textarea
+                  class="w-full border-2 border-gray-200 rounded p-3 text-sm"
+                  id="message"
+                  rows="4"></textarea>
+              </div>
+
+              <div class="text-right">
+                <button
+                  class="inline-block bg-webwave-blue hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 text-white text-sm font-semibold px-6 py-2 rounded">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-sky-900 px-6 py-4">
+      <div
+        class="container flex flex-col md:flex-row items-center justify-between mx-auto">
+        <div
+          class="w-full md:w-auto mb-4 md:mb-0 text-white text-center md:text-left">
+          <p>&copy; 2023 Webwave Building. All rights reserved.</p>
+        </div>
+
+        <div class="flex justify-center md:justify-end space-x-5">
+          <a
+            href="#"
+            class="text-white hover:text-webwave-blue transition duration-500">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-webwave-blue transition duration-500">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="text-white hover:text-webwave-blue transition duration-500">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f19c4dc85c.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+      // Script to toggle mobile menu
+    </script>
+  </body>
+</html>
