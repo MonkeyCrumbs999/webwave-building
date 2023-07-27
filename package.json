@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify && cp _redirects dist/"
+  },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   }
