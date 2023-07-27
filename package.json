@@ -3,8 +3,9 @@
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "copy:html": "rimraf ./dist/*.html && copyfiles -u 1 ./src/*.html ./dist",
     "copy:img": "rimraf ./dist/img && ncp ./src/img ./dist/img",
+    "copy:svg": "rimraf ./dist/svg && ncp ./src/svg ./dist/svg",
     "copy:redirects": "copyfiles -u 1 ./src/_redirects ./dist",
-    "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:redirects",
+    "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:svg && npm run copy:redirects",
     "start": "npm run build && lite-server",
     "watch": "onchange './src/**/*' -- npm run build"
   },
