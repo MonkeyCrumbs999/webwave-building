@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "build": "npm run build:css && npm run copy:html && npm run copy:img",
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "copy:html": "rimraf ./dist/*.html && ncp ./src/*.html ./dist",
-    "copy:img": "rimraf ./dist/img && ncp ./src/img ./dist/img"
+    "copy:img": "rimraf ./dist/img && ncp ./src/img ./dist/img",
+    "copy:redirects": "copy src\\_redirects dist",
+    "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:redirects"
   },
   "devDependencies": {
     "ncp": "^2.0.0",
