@@ -6,15 +6,20 @@
     "copy:svg": "rimraf ./dist/svg && ncp ./src/svg ./dist/svg",
     "copy:redirects": "copyfiles -u 1 ./src/_redirects ./dist",
     "build": "npm run build:css && npm run copy:html && npm run copy:img && npm run copy:svg && npm run copy:redirects",
-    "start": "npm run build && lite-server",
-    "watch": "onchange './src/**/*' -- npm run build"
+    "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "watch": "onchange './src/**/*' -- npm run build",
+    "serve": "lite-server"
   },
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "copyfiles": "^2.4.1",
     "lite-server": "^2.6.1",
     "ncp": "^2.0.0",
     "onchange": "^7.1.0",
     "rimraf": "^3.0.2",
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
