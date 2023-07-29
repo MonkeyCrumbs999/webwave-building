@@ -35,7 +35,7 @@
       animation: wiggle 1.5s ease-in-out;
     }
   </style>
-  <body>
+  <body class="transition-colors duration-500 bg-none dark:bg-slate-800">
     <!-- CONTAINER -->
     <div
       class="flex flex-col relative min-h-screen bg-none xl:bg-[url('/svg/wave.svg')] bg-contain bg-no-repeat bg-bottom dark:bg-slate-800 dark:text-white">
@@ -48,6 +48,16 @@
         <!-- NAVBAR -->
         <nav
           class="flex items-center justify-between py-2 px-2 lg:px-4 bg-white border-slate-200 border-x-2 border-t-2 rounded-md shadow-lg dark:bg-slate-800 dark:border-b-2">
+          <!-- DARK MODE TOGGLE -->
+          <button
+            id="darkModeToggle"
+            type="button"
+            class="inline-block rounded-full bg-neutral-800 px-2 pb-1 pt-1 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] transition duration-150 ease-in-out hover:bg-neutral-800 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-neutral-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] dark:bg-blue-900 dark:shadow-[0_4px_9px_-4px_#030202] dark:hover:bg-blue-900 dark:hover:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:focus:bg-blue-900 dark:focus:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)] dark:active:bg-blue-900 dark:active:shadow-[0_8px_9px_-4px_rgba(3,2,2,0.3),0_4px_18px_0_rgba(3,2,2,0.2)]">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <!-- END DARK MODE TOGGLE -->
+
           <!-- NAV MENU -->
           <ul
             id="menu"
@@ -55,34 +65,34 @@
             <li class="inline-block p-6">
               <a
                 href="/src/index.html"
-                class="transition duration-500 hover:text-webwave-blue"
+                class="hover:transition hover:duration-500 hover:text-webwave-blue"
                 >Home</a
               >
             </li>
             <li class="inline-block p-6">
               <a
                 href="/src/services.html"
-                class="transition duration-500 hover:text-webwave-blue"
+                class="hover:transition hover:duration-500 hover:text-webwave-blue"
                 >Services</a
               >
             </li>
             <li class="inline-block p-6">
               <a
                 href="/src/portfolio.html"
-                class="transition duration-500 hover:text-webwave-blue"
+                class="hover:transition hover:duration-500 hover:text-webwave-blue"
                 >Portfolio</a
               >
             </li>
             <li class="inline-block p-6">
               <a
                 href="/src/contact.html"
-                class="transition duration-500 hover:text-webwave-blue"
+                class="hover:transition hover:duration-500 hover:text-webwave-blue"
                 >Contact</a
               >
             </li>
             <a href="/src/getyoursitenow.html">
               <li
-                class="inline-block p-4 border-double border-4 border-webwave-blue rounded-md transition duration-0 hover:bg-webwave-blue hover:text-white hover:duration-300">
+                class="inline-block p-4 border-double border-4 border-webwave-blue rounded-md hover:transition hover:duration-0 hover:bg-webwave-blue hover:text-white hover:duration-300">
                 Get Your Site Now
               </li>
             </a>
@@ -340,6 +350,12 @@
         .querySelectorAll(".why-choose-us, .our-process")
         .forEach((img) => {
           observer.observe(img);
+        });
+
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("click", function () {
+          document.documentElement.classList.toggle("dark");
         });
     </script>
     <!-- START FOOTER -->
