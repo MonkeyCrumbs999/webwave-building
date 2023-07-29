@@ -8,36 +8,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/output.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
   </head>
-  <style>
-    #mobile-menu {
-      position: absolute;
-      top: 11%;
-      right: 7%;
-      z-index: 999;
-    }
-    @keyframes wiggle {
-      0% {
-        transform: rotate(0deg);
-      }
-      25% {
-        transform: rotate(-3deg);
-      }
-      50% {
-        transform: rotate(3deg);
-      }
-      75% {
-        transform: rotate(-3deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
 
-    .wiggle {
-      animation: wiggle 1.5s ease-in-out;
-    }
-  </style>
   <body class="transition-colors duration-500 bg-none dark:bg-slate-800">
     <!-- CONTAINER -->
     <div
@@ -270,7 +243,7 @@
 
     <!-- OUR PROCESS -->
     <div
-      class="flex flex-col-reverse md:flex-row gap-4 md:gap-8 justify-between items-center bg-gradient-to-b from-transparent via-transparent to-sky-100 px-4 md:px-20 py-12 md:py-10 mt-12 md:mt-24 rounded-md shadow-lg transition-all duration-500 min-h-[400px]">
+      class="flex flex-col-reverse md:flex-row justify-between items-center gap-4 md:gap-8 px-4 md:px-20 py-12 md:py-10 mt-12 md:mt-24 bg-gradient-to-b from-transparent via-transparent to-sky-100 rounded-md shadow-lg transition-all duration-500 min-h-[400px]">
       <div
         class="w-full md:w-1/2 flex justify-center items-center p-4 mb-4 md:mb-0">
         <img
@@ -283,7 +256,7 @@
           class="text-2xl md:text-4xl font-bold mb-4 text-webwave-blue uppercase">
           Our Process
         </h2>
-        <div class="mx-2 md:mx-auto w-full md:w-3/4 mx-auto">
+        <div class="w-full md:w-3/4 mx-2 md:mx-auto">
           <p
             class="text-lg md:text-2xl lg:text-md xl:text-3xl text-gray-800 px-2 md:px-0 dark:text-white">
             We make getting a custom website simple! Just provide us with your
@@ -293,79 +266,144 @@
         </div>
       </div>
     </div>
+
     <!-- END OUR PROCESS -->
 
+    <!-- CAROUSEL -->
+    <div
+      class="flex flex-col justify-center items-center mt-24 m-auto max-w-lg">
+      <h2 class="text-4xl font-bold text-webwave-blue uppercase">Our Work</h2>
+
+      <p class="text-2xl text-gray-800 mt-4 text-center">
+        We've helped many local businesses in Medford, OR with their websites.
+        Here are a few of our favorites.
+      </p>
+      <div
+        id="app"
+        class="max-w-[500px] mx-auto py-12 transition-all duration-500 ease-linear">
+        <div class="relative">
+          <div
+            class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/10343729/pexels-photo-10343729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/13860053/pexels-photo-13860053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/8576739/pexels-photo-8576739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/1743367/pexels-photo-1743367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/5920021/pexels-photo-5920021.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/12805075/pexels-photo-12805075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+            <div
+              class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="mountain_image" />
+            </div>
+          </div>
+
+          <div
+            class="absolute top-0 -left-4 h-full items-center hidden md:flex">
+            <button
+              role="button"
+              class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+              aria-label="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="absolute top-0 -right-4 h-full items-center hidden md:flex">
+            <button
+              role="button"
+              class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+              aria-label="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CAROUSEL -->
     <script
       src="https://kit.fontawesome.com/f19c4dc85c.js"
       crossorigin="anonymous"></script>
-    <script>
-      const hamX1 = document.querySelector(".ham-x1");
-      const hamX2 = document.querySelector(".ham-x2");
-      const hamMenu = document.getElementById("hamMenu");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      function toggleMenu() {
-        hamX1.classList.toggle("translate-y-1");
-        hamX1.classList.toggle("rotate-45");
-        hamX2.classList.toggle("w-6");
-        hamX2.classList.toggle("-translate-y-1");
-        hamX2.classList.toggle("-rotate-45");
-        hamX2.classList.toggle("w-4");
-        mobileMenu.classList.toggle("invisible");
-        mobileMenu.classList.toggle("opacity-0");
-        mobileMenu.classList.toggle("opacity-100");
-      }
-
-      // A flag to indicate if the menu is open or not
-      let menuOpen = false;
-
-      // A function to close the menu if it is open
-      function closeMenu() {
-        if (menuOpen) {
-          toggleMenu();
-          menuOpen = false;
-        }
-      }
-
-      // Add a click event listener to the hamburger menu
-      hamMenu.addEventListener("click", function () {
-        // Toggle the menu and update the flag
-        toggleMenu();
-        menuOpen = !menuOpen;
-      });
-
-      // Add a click event listener to the document
-      document.addEventListener("click", function (event) {
-        // Check if the clicked element is outside of the hamburger menu
-        // and its children using contains()
-        if (!hamMenu.contains(event.target)) {
-          // Close the menu if it is open
-          closeMenu();
-        }
-      });
-      let observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("wiggle");
-            }
-          });
-        },
-        { threshold: 1.0 }
-      );
-
-      document
-        .querySelectorAll(".why-choose-us, .our-process")
-        .forEach((img) => {
-          observer.observe(img);
-        });
-
-      document
-        .getElementById("darkModeToggle")
-        .addEventListener("click", function () {
-          document.documentElement.classList.toggle("dark");
-        });
-    </script>
+    <script src="/index.js"></script>
     <!-- START FOOTER -->
     <footer class="bg-sky-900 px-6 py-4 mt-16">
       <div

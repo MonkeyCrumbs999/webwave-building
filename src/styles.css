@@ -1,0 +1,35 @@
+#mobile-menu {
+  position: absolute;
+  top: 11%;
+  right: 7%;
+  z-index: 999;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 1.5s ease-in-out;
+}
+
+.slides-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.slides-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
