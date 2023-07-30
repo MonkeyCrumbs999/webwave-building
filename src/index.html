@@ -271,19 +271,22 @@
 
     <!-- CAROUSEL -->
     <div
-      class="flex flex-col justify-center items-center mt-24 m-auto max-w-lg">
-      <h2 class="text-4xl font-bold text-webwave-blue uppercase">Our Work</h2>
+      class="flex flex-col justify-center items-center mt-12 md:mt-24 m-auto max-w-lg px-4 md:px-0">
+      <h2 class="text-2xl md:text-4xl font-bold text-webwave-blue uppercase">
+        Our Work
+      </h2>
 
-      <p class="text-2xl text-gray-800 mt-4 text-center">
+      <p class="text-base md:text-2xl text-gray-800 mt-2 md:mt-4 text-center">
         We've helped many local businesses in Medford, OR with their websites.
         Here are a few of our favorites.
       </p>
+
       <div
         id="app"
-        class="max-w-[500px] mx-auto py-12 transition-all duration-500 ease-linear">
+        class="max-w-full md:max-w-[500px] mx-auto py-8 md:py-12 transition-all duration-500 ease-linear">
         <div class="relative">
           <div
-            class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
+            class="slides-container h-48 md:h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[25vw] md:before:w-[45vw] before:shrink-0 after:w-[35vw] md:after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
             <div
               class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
               <img
@@ -357,10 +360,10 @@
           </div>
 
           <div
-            class="absolute top-0 -left-4 h-full items-center hidden md:flex">
+            class="absolute top-0 -left-2 md:-left-4 h-full items-center flex">
             <button
               role="button"
-              class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+              class="prev px-1 md:px-2 py-1 md:py-2 rounded-full bg-neutral-100 text-neutral-900 group"
               aria-label="prev">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -368,7 +371,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
+                class="w-4 md:w-5 h-4 md:h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -377,10 +380,10 @@
             </button>
           </div>
           <div
-            class="absolute top-0 -right-4 h-full items-center hidden md:flex">
+            class="absolute top-0 -right-2 md:-right-4 h-full items-center flex">
             <button
               role="button"
-              class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+              class="next px-1 md:px-2 py-1 md:py-2 rounded-full bg-neutral-100 text-neutral-900 group"
               aria-label="next">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -388,7 +391,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
+                class="w-4 md:w-5 h-4 md:h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
